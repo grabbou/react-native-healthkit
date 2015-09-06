@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092DC1891B9C923E0090E1AC /* RCTHealthKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 092DC1881B9C923E0090E1AC /* RCTHealthKit.h */; };
+		092DC18B1B9C923E0090E1AC /* RCTHealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 092DC18A1B9C923E0090E1AC /* RCTHealthKit.m */; };
+		092DC1911B9C923E0090E1AC /* libRCTHealthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 092DC1851B9C923E0090E1AC /* libRCTHealthKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		092DC1921B9C923E0090E1AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 092DC17D1B9C923E0090E1AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 092DC1841B9C923E0090E1AC;
+			remoteInfo = RCTHealthKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		092DC1831B9C923E0090E1AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				092DC1891B9C923E0090E1AC /* RCTHealthKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		092DC1851B9C923E0090E1AC /* libRCTHealthKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTHealthKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		092DC1881B9C923E0090E1AC /* RCTHealthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTHealthKit.h; sourceTree = "<group>"; };
+		092DC18A1B9C923E0090E1AC /* RCTHealthKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTHealthKit.m; sourceTree = "<group>"; };
+		092DC1901B9C923E0090E1AC /* RCTHealthKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTHealthKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		092DC1961B9C923E0090E1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		092DC1821B9C923E0090E1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092DC18D1B9C923E0090E1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092DC1911B9C923E0090E1AC /* libRCTHealthKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		092DC17C1B9C923E0090E1AC = {
+			isa = PBXGroup;
+			children = (
+				092DC1871B9C923E0090E1AC /* RCTHealthKit */,
+				092DC1941B9C923E0090E1AC /* RCTHealthKitTests */,
+				092DC1861B9C923E0090E1AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		092DC1861B9C923E0090E1AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				092DC1851B9C923E0090E1AC /* libRCTHealthKit.a */,
+				092DC1901B9C923E0090E1AC /* RCTHealthKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		092DC1871B9C923E0090E1AC /* RCTHealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				092DC1881B9C923E0090E1AC /* RCTHealthKit.h */,
+				092DC18A1B9C923E0090E1AC /* RCTHealthKit.m */,
+			);
+			path = RCTHealthKit;
+			sourceTree = "<group>";
+		};
+		092DC1941B9C923E0090E1AC /* RCTHealthKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				092DC1951B9C923E0090E1AC /* Supporting Files */,
+			);
+			path = RCTHealthKitTests;
+			sourceTree = "<group>";
+		};
+		092DC1951B9C923E0090E1AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				092DC1961B9C923E0090E1AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		092DC1841B9C923E0090E1AC /* RCTHealthKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092DC1991B9C923E0090E1AC /* Build configuration list for PBXNativeTarget "RCTHealthKit" */;
+			buildPhases = (
+				092DC1811B9C923E0090E1AC /* Sources */,
+				092DC1821B9C923E0090E1AC /* Frameworks */,
+				092DC1831B9C923E0090E1AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTHealthKit;
+			productName = RCTHealthKit;
+			productReference = 092DC1851B9C923E0090E1AC /* libRCTHealthKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		092DC18F1B9C923E0090E1AC /* RCTHealthKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092DC19C1B9C923E0090E1AC /* Build configuration list for PBXNativeTarget "RCTHealthKitTests" */;
+			buildPhases = (
+				092DC18C1B9C923E0090E1AC /* Sources */,
+				092DC18D1B9C923E0090E1AC /* Frameworks */,
+				092DC18E1B9C923E0090E1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				092DC1931B9C923E0090E1AC /* PBXTargetDependency */,
+			);
+			name = RCTHealthKitTests;
+			productName = RCTHealthKitTests;
+			productReference = 092DC1901B9C923E0090E1AC /* RCTHealthKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		092DC17D1B9C923E0090E1AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Spencer Elliott";
+				TargetAttributes = {
+					092DC1841B9C923E0090E1AC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					092DC18F1B9C923E0090E1AC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 092DC1801B9C923E0090E1AC /* Build configuration list for PBXProject "RCTHealthKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 092DC17C1B9C923E0090E1AC;
+			productRefGroup = 092DC1861B9C923E0090E1AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				092DC1841B9C923E0090E1AC /* RCTHealthKit */,
+				092DC18F1B9C923E0090E1AC /* RCTHealthKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		092DC18E1B9C923E0090E1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		092DC1811B9C923E0090E1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092DC18B1B9C923E0090E1AC /* RCTHealthKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		092DC18C1B9C923E0090E1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		092DC1931B9C923E0090E1AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 092DC1841B9C923E0090E1AC /* RCTHealthKit */;
+			targetProxy = 092DC1921B9C923E0090E1AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		092DC1971B9C923E0090E1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		092DC1981B9C923E0090E1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		092DC19A1B9C923E0090E1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		092DC19B1B9C923E0090E1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		092DC19D1B9C923E0090E1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RCTHealthKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		092DC19E1B9C923E0090E1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RCTHealthKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		092DC1801B9C923E0090E1AC /* Build configuration list for PBXProject "RCTHealthKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092DC1971B9C923E0090E1AC /* Debug */,
+				092DC1981B9C923E0090E1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		092DC1991B9C923E0090E1AC /* Build configuration list for PBXNativeTarget "RCTHealthKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092DC19A1B9C923E0090E1AC /* Debug */,
+				092DC19B1B9C923E0090E1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		092DC19C1B9C923E0090E1AC /* Build configuration list for PBXNativeTarget "RCTHealthKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092DC19D1B9C923E0090E1AC /* Debug */,
+				092DC19E1B9C923E0090E1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 092DC17D1B9C923E0090E1AC /* Project object */;
+}

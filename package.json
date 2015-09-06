@@ -8,9 +8,13 @@
   },
   "keywords": [
     "react",
+    "react-component",
     "native",
     "healthkit"
   ],
   "author": "Spencer Elliott <me@elliottsj.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.10.1"
+  }
 }
