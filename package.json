@@ -1,0 +1,16 @@
+{
+  "name": "react-native-healthkit",
+  "version": "0.0.1",
+  "description": "A React Native bridge module to access iOS HealthKit APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "healthkit"
+  ],
+  "author": "Spencer Elliott <me@elliottsj.com>",
+  "license": "MIT"
+}
