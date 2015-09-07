@@ -38,7 +38,7 @@ let SimpleExample = React.createClass({
       <NavigatorIOS
         style={styles.container}
         initialRoute={{
-          title: 'RCTHealthKit',
+          title: 'HealthKit',
           component: Index
         }}
       />

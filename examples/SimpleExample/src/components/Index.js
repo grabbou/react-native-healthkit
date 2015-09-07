@@ -10,7 +10,6 @@ let Characteristics = require('./Characteristics')
 let Empty = require('./Empty')
 
 let Index = React.createClass({
-
   render () {
     return (
       <StaticList onSelectRow={row => this.selectRow(row)}>

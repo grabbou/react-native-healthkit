@@ -163,7 +163,7 @@ let styles = StyleSheet.create({
     flexDirection: 'row'
   },
   rowLabel: {
-    flex: 1,
+    flex: 2,
     fontSize: 16,
     color: '#333',
   },
