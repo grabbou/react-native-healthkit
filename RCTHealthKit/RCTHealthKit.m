@@ -75,17 +75,17 @@ RCT_EXPORT_MODULE();
 - (NSDictionary *)constantsToExport
 {
     return @{
-             @"BiologicalSex": @{
-                     @"NotSet": [NSNumber numberWithInteger:HKBiologicalSexNotSet],
-                     @"Female": [NSNumber numberWithInteger:HKBiologicalSexFemale],
-                     @"Male": [NSNumber numberWithInteger:HKBiologicalSexMale],
-                     @"Other": [NSNumber numberWithInteger:HKBiologicalSexOther]
-                     },
-             @"SleepAnalysis": @{
-                     @"InBed": [NSNumber numberWithInteger:HKCategoryValueSleepAnalysisInBed],
-                     @"Asleep": [NSNumber numberWithInteger:HKCategoryValueSleepAnalysisAsleep]
-                     }
-             };
+        @"BiologicalSex": @{
+            @"NotSet": [NSNumber numberWithInteger:HKBiologicalSexNotSet],
+            @"Female": [NSNumber numberWithInteger:HKBiologicalSexFemale],
+            @"Male": [NSNumber numberWithInteger:HKBiologicalSexMale],
+            @"Other": [NSNumber numberWithInteger:HKBiologicalSexOther]
+        },
+        @"SleepAnalysis": @{
+            @"InBed": [NSNumber numberWithInteger:HKCategoryValueSleepAnalysisInBed],
+            @"Asleep": [NSNumber numberWithInteger:HKCategoryValueSleepAnalysisAsleep]
+        }
+    };
 }
 
 RCT_EXPORT_METHOD(isHealthDataAvailable:(RCTResponseSenderBlock)callback)
@@ -105,7 +105,7 @@ RCT_EXPORT_METHOD(requestAuthorizationToShareTypes:(NSDictionary *)typesToShare
             callback(@[@"Failed to authorize HealthKit", [NSNumber numberWithBool:success]]);
             return;
         }
-        
+
         callback(@[[NSNull null], [NSNumber numberWithBool:success]]);
     }];
 }
@@ -125,7 +125,7 @@ RCT_EXPORT_METHOD(queryCategorySample:(NSString *)typeIdentifier
     // Parse dates
     NSDate *startDate = [RCTHealthKit parseISO8601DateFromString:startDateString];
     NSDate *endDate = [RCTHealthKit parseISO8601DateFromString:endDateString];
-    
+
     // Build the query
     HKSampleType *sampleType = [HKSampleType categoryTypeForIdentifier:typeIdentifier];
     NSPredicate *predicate = [HKQuery predicateForSamplesWithStartDate:startDate endDate:endDate options:HKQueryOptionNone];
@@ -148,7 +148,7 @@ RCT_EXPORT_METHOD(queryCategorySample:(NSString *)typeIdentifier
                                 }
                                 callback(@[error ? error.description : [NSNull null], plainResults]);
                             }];
-    
+
     // Execute the query
     [self.healthStore executeQuery:query];
 }
@@ -162,7 +162,7 @@ RCT_EXPORT_METHOD(queryStatistics:(NSString *)typeIdentifier
     // Parse dates
     NSDate *startDate = [RCTHealthKit parseISO8601DateFromString:startDateString];
     NSDate *endDate = [RCTHealthKit parseISO8601DateFromString:endDateString];
-    
+
     // Build query
     HKQuantityType *sampleType = [HKQuantityType quantityTypeForIdentifier:typeIdentifier];
     NSPredicate *predicate = [HKQuery predicateForSamplesWithStartDate:startDate endDate:endDate options:HKQueryOptionStrictStartDate];
@@ -174,10 +174,10 @@ RCT_EXPORT_METHOD(queryStatistics:(NSString *)typeIdentifier
                                     if (!result) {
                                         return;
                                     }
-                                    
+
                                     double totalNutrients = [result.sumQuantity doubleValueForUnit:[HKUnit unitFromString:unitString]];
                                     NSNumber *nsTotalNutrients = [NSNumber numberWithDouble:totalNutrients];
-                                    
+
                                     NSMutableArray *plainResults = [NSMutableArray new];
                                     [plainResults addObject:@{
                                                               @"startDate": [RCTHealthKit buildISO8601StringFromDate:result.startDate],
@@ -185,13 +185,13 @@ RCT_EXPORT_METHOD(queryStatistics:(NSString *)typeIdentifier
                                                               @"quantityType": result.quantityType.identifier,
                                                               @"value": nsTotalNutrients
                                                               }];
-                                    
+
                                     callback(@[error ? error.description : [NSNull null], plainResults]);
                                 }];
-    
+
     // Execute the query
     [self.healthStore executeQuery:query];
-    
+
 }
 
 
