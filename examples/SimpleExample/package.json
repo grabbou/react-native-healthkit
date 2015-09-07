@@ -1,0 +1,13 @@
+{
+  "name": "SimpleExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "invariant": "^2.1.0",
+    "react-native": "^0.10.1"
+  }
+}
