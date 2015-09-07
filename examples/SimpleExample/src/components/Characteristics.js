@@ -9,6 +9,7 @@ let {
   View
 } = React
 let HealthKit = require('react-native-healthkit')
+let findKey = require('lodash/object/findKey')
 
 let StaticList = require('./StaticList')
 
@@ -29,13 +30,18 @@ let Characteristics = React.createClass({
   },
 
   render () {
-    let { err, result } = this.state
+    let { biologicalSex } = this.state
+    let biologicalSexKey = findKey(
+      HealthKit.BiologicalSex,
+      value => value === biologicalSex
+    )
 
     return (
       <StaticList>
         <StaticList.Section>
           <StaticList.Item
-            label='Biological Sex' />
+            label='Biological Sex'
+            value={biologicalSexKey} />
         </StaticList.Section>
       </StaticList>
     )
