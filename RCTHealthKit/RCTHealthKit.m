@@ -8,7 +8,25 @@
 
 #import "RCTHealthKit.h"
 
-@implementation KOHealthKit
+@implementation RCTHealthKit
+
++ (NSDate *)parseISO8601DateFromString:(NSString *)date
+{
+  NSDateFormatter *dateFormatter = [NSDateFormatter new];
+  NSLocale *posix = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+  dateFormatter.locale = posix;
+  dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
+  return [dateFormatter dateFromString:date];
+}
+
++ (NSString *)buildISO8601StringFromDate:(NSDate *)date
+{
+  NSDateFormatter *dateFormatter = [NSDateFormatter new];
+  NSLocale *posix = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+  dateFormatter.locale = posix;
+  dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
+  return [dateFormatter stringFromDate:date];
+}
 
 @synthesize healthStore = _healthStore;
 
@@ -80,8 +98,8 @@ RCT_EXPORT_METHOD(requestAuthorizationToShareTypes:(NSDictionary *)typesToShare
                   readTypes:(NSDictionary *)typesToRead
                   callback:(RCTResponseSenderBlock)callback)
 {
-    NSSet *typesToShareSet = [KOHealthKit typesSetFromDictionary:typesToShare];
-    NSSet *typesToReadSet = [KOHealthKit typesSetFromDictionary:typesToRead];
+    NSSet *typesToShareSet = [RCTHealthKit typesSetFromDictionary:typesToShare];
+    NSSet *typesToReadSet = [RCTHealthKit typesSetFromDictionary:typesToRead];
     [self.healthStore requestAuthorizationToShareTypes:typesToShareSet readTypes:typesToReadSet completion:^(BOOL success, NSError *error) {
         if (!success) {
             callback(@[@"Failed to authorize HealthKit", [NSNumber numberWithBool:success]]);
@@ -105,8 +123,8 @@ RCT_EXPORT_METHOD(queryCategorySample:(NSString *)typeIdentifier
                   callback:(RCTResponseSenderBlock)callback)
 {
     // Parse dates
-    NSDate *startDate = [KOUtils parseISO8601DateFromString:startDateString];
-    NSDate *endDate = [KOUtils parseISO8601DateFromString:endDateString];
+    NSDate *startDate = [RCTHealthKit parseISO8601DateFromString:startDateString];
+    NSDate *endDate = [RCTHealthKit parseISO8601DateFromString:endDateString];
     
     // Build the query
     HKSampleType *sampleType = [HKSampleType categoryTypeForIdentifier:typeIdentifier];
@@ -121,8 +139,8 @@ RCT_EXPORT_METHOD(queryCategorySample:(NSString *)typeIdentifier
                                 for (HKCategorySample *sample in results) {
                                     // Convert samples to plain NSDictionary / NSString / NSNumber
                                     [plainResults addObject:@{
-                                                              @"startDate": [KOUtils buildISO8601StringFromDate:sample.startDate],
-                                                              @"endDate": [KOUtils buildISO8601StringFromDate:sample.endDate],
+                                                              @"startDate": [RCTHealthKit buildISO8601StringFromDate:sample.startDate],
+                                                              @"endDate": [RCTHealthKit buildISO8601StringFromDate:sample.endDate],
                                                               @"sampleType": sample.sampleType.identifier,
                                                               @"categoryType": sample.categoryType.identifier,
                                                               @"value": [NSNumber numberWithLong:sample.value]
@@ -142,8 +160,8 @@ RCT_EXPORT_METHOD(queryStatistics:(NSString *)typeIdentifier
                   callback:(RCTResponseSenderBlock)callback)
 {
     // Parse dates
-    NSDate *startDate = [KOUtils parseISO8601DateFromString:startDateString];
-    NSDate *endDate = [KOUtils parseISO8601DateFromString:endDateString];
+    NSDate *startDate = [RCTHealthKit parseISO8601DateFromString:startDateString];
+    NSDate *endDate = [RCTHealthKit parseISO8601DateFromString:endDateString];
     
     // Build query
     HKQuantityType *sampleType = [HKQuantityType quantityTypeForIdentifier:typeIdentifier];
@@ -162,8 +180,8 @@ RCT_EXPORT_METHOD(queryStatistics:(NSString *)typeIdentifier
                                     
                                     NSMutableArray *plainResults = [NSMutableArray new];
                                     [plainResults addObject:@{
-                                                              @"startDate": [KOUtils buildISO8601StringFromDate:result.startDate],
-                                                              @"endDate": [KOUtils buildISO8601StringFromDate:result.endDate],
+                                                              @"startDate": [RCTHealthKit buildISO8601StringFromDate:result.startDate],
+                                                              @"endDate": [RCTHealthKit buildISO8601StringFromDate:result.endDate],
                                                               @"quantityType": result.quantityType.identifier,
                                                               @"value": nsTotalNutrients
                                                               }];

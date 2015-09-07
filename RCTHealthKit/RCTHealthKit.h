@@ -11,7 +11,7 @@
 
 @import HealthKit;
 
-@interface KOHealthKit : NSObject <RCTBridgeModule>
+@interface RCTHealthKit : NSObject <RCTBridgeModule>
 
 @property (readonly) HKHealthStore *healthStore;
 
