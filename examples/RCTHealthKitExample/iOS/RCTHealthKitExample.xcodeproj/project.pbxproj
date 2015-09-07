@@ -13,7 +13,6 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* SimpleExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SimpleExampleTests.m */; };
 		09384F241B9D259F0095EDC7 /* libRCTHealthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09384F201B9D20380095EDC7 /* libRCTHealthKit.a */; };
 		09384F551B9D590B0095EDC7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09384F541B9D590B0095EDC7 /* HealthKit.framework */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
@@ -128,15 +127,16 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* SimpleExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RCTHealthKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTHealthKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* SimpleExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleExampleTests.m; sourceTree = "<group>"; };
 		09384F1A1B9D20380095EDC7 /* RCTHealthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTHealthKit.xcodeproj; path = "../node_modules/react-native-healthkit/RCTHealthKit.xcodeproj"; sourceTree = "<group>"; };
-		09384F531B9D590B0095EDC7 /* SimpleExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleExample.entitlements; sourceTree = "<group>"; };
+		09384F531B9D590B0095EDC7 /* RCTHealthKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RCTHealthKitExample.entitlements; sourceTree = "<group>"; };
 		09384F541B9D590B0095EDC7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		09384F9F1B9D5D540095EDC7 /* RCTHealthKitExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTHealthKitExampleTests.m; path = RCTHealthKitExampleTests/RCTHealthKitExampleTests.m; sourceTree = SOURCE_ROOT; };
+		0948FA651B9FA6E70061A325 /* RCTHealthKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RCTHealthKitExample.entitlements; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* SimpleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* RCTHealthKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCTHealthKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09384F241B9D259F0095EDC7 /* libRCTHealthKit.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -171,7 +172,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				09384F551B9D590B0095EDC7 /* HealthKit.framework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				09384F241B9D259F0095EDC7 /* libRCTHealthKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,13 +218,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* SimpleExampleTests */ = {
+		00E356EF1AD99517003FC87E /* RCTHealthKitExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* SimpleExampleTests.m */,
+				09384F9F1B9D5D540095EDC7 /* RCTHealthKitExampleTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = SimpleExampleTests;
+			path = RCTHealthKitExampleTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -260,10 +260,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* SimpleExample */ = {
+		13B07FAE1A68108700A75B9A /* RCTHealthKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				09384F531B9D590B0095EDC7 /* SimpleExample.entitlements */,
+				0948FA651B9FA6E70061A325 /* RCTHealthKitExample.entitlements */,
+				09384F531B9D590B0095EDC7 /* RCTHealthKitExample.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -272,7 +273,7 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			path = SimpleExample;
+			path = RCTHealthKitExample;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -321,8 +322,8 @@
 			isa = PBXGroup;
 			children = (
 				09384F541B9D590B0095EDC7 /* HealthKit.framework */,
-				13B07FAE1A68108700A75B9A /* SimpleExample */,
-				00E356EF1AD99517003FC87E /* SimpleExampleTests */,
+				13B07FAE1A68108700A75B9A /* RCTHealthKitExample */,
+				00E356EF1AD99517003FC87E /* RCTHealthKitExampleTests */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
@@ -333,8 +334,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* SimpleExample.app */,
-				00E356EE1AD99517003FC87E /* SimpleExampleTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RCTHealthKitExample.app */,
+				00E356EE1AD99517003FC87E /* RCTHealthKitExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,9 +343,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* SimpleExampleTests */ = {
+		00E356ED1AD99517003FC87E /* RCTHealthKitExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SimpleExampleTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RCTHealthKitExampleTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -355,14 +356,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = SimpleExampleTests;
-			productName = SimpleExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* SimpleExampleTests.xctest */;
+			name = RCTHealthKitExampleTests;
+			productName = RCTHealthKitExampleTests;
+			productReference = 00E356EE1AD99517003FC87E /* RCTHealthKitExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* SimpleExample */ = {
+		13B07F861A680F5B00A75B9A /* RCTHealthKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SimpleExample" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RCTHealthKitExample" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -372,9 +373,9 @@
 			);
 			dependencies = (
 			);
-			name = SimpleExample;
+			name = RCTHealthKitExample;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* SimpleExample.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* RCTHealthKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -400,7 +401,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SimpleExample" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RCTHealthKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -459,8 +460,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* SimpleExample */,
-				00E356ED1AD99517003FC87E /* SimpleExampleTests */,
+				13B07F861A680F5B00A75B9A /* RCTHealthKitExample */,
+				00E356ED1AD99517003FC87E /* RCTHealthKitExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -577,7 +578,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* SimpleExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +595,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* SimpleExample */;
+			target = 13B07F861A680F5B00A75B9A /* RCTHealthKitExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -624,11 +624,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SimpleExampleTests/Info.plist;
+				INFOPLIST_FILE = RCTHealthKitExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleExample.app/SimpleExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCTHealthKitExample.app/RCTHealthKitExample";
 			};
 			name = Debug;
 		};
@@ -641,11 +641,11 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SimpleExampleTests/Info.plist;
+				INFOPLIST_FILE = RCTHealthKitExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleExample.app/SimpleExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCTHealthKitExample.app/RCTHealthKitExample";
 			};
 			name = Release;
 		};
@@ -653,7 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SimpleExample/SimpleExample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RCTHealthKitExample/RCTHealthKitExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
@@ -661,10 +661,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/SimpleExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RCTHealthKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = SimpleExample;
+				PRODUCT_NAME = RCTHealthKitExample;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -673,7 +673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SimpleExample/SimpleExample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RCTHealthKitExample/RCTHealthKitExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
@@ -681,10 +681,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/SimpleExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RCTHealthKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = SimpleExample;
+				PRODUCT_NAME = RCTHealthKitExample;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -778,7 +778,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SimpleExampleTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RCTHealthKitExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -787,7 +787,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SimpleExample" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RCTHealthKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -796,7 +796,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SimpleExample" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RCTHealthKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
