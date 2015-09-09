@@ -9,6 +9,9 @@ let {
   View
 } = React
 let HealthKit = require('react-native-healthkit')
+let {
+  TypeIdentifiers
+} = HealthKit
 let findKey = require('lodash/object/findKey')
 
 let StaticList = require('./StaticList')
@@ -23,9 +26,19 @@ let Characteristics = React.createClass({
   },
 
   componentWillMount () {
-    HealthKit.getBiologicalSex((err, biologicalSex) => {
+    HealthKit.requestAuthorizationToShareTypes({
+      typesToShare: [],
+      typesToRead: [
+        TypeIdentifiers.Characteristic.BiologicalSex,
+        TypeIdentifiers.Characteristic.BloogType,
+        TypeIdentifiers.Characteristic.DateOfBirth
+      ]
+    }, (err, success) => {
       if (err) throw new Error(err)
-      this.setState({ biologicalSex })
+      HealthKit.getBiologicalSex((err, biologicalSex) => {
+        if (err) throw new Error(err)
+        this.setState({ biologicalSex })
+      })
     })
   },
 
